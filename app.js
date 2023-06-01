@@ -62,8 +62,8 @@ app.get("/todos/", async (request, response) => {
             FROM
                 todo
             WHERE
-                todo LIKE '%${search_q}%',
-                AND status = '${status}',
+                todo LIKE '%${search_q}%'
+                AND status = '${status}'
                 AND priority = '${priority}';
             `;
       break;
@@ -75,7 +75,7 @@ app.get("/todos/", async (request, response) => {
             FROM
                 todo
             WHERE
-                todo LIKE '%${search_q}%',
+                todo LIKE '%${search_q}%'
                 AND priority = '${priority}';
             `;
       break;
@@ -87,7 +87,7 @@ app.get("/todos/", async (request, response) => {
             FROM
                 todo
             WHERE
-                todo LIKE '%${search_q}%',
+                todo LIKE '%${search_q}%'
                 AND status = '${status}';
             `;
       break;
